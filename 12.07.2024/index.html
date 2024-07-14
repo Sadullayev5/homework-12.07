@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="registration-wrapper">
+        <div class="registration">
+            <form class="reg-form">
+                <h2>Futbolchini Ro'yxatga olish</h2>
+                <input required class="formInput" type="text" placeholder="Ismi">
+                <input required class="formInput" type="text" placeholder="Familiyasi">
+                <input required class="formInput" type="number" placeholder="Yoshi">
+                <input required class="formInput" type="url" placeholder="Rasmining URL manzili">
+                <select class="formInput" id="position">
+                    <option disabled selected>O'yinchi pozitsiyasini tanlang</option>
+                    <option value="darvozabon">Darvozabon</option>
+                    <option value="himoyachi">Himoyachi</option>
+                    <option value="yarim-himoyachi">Yarim himoyachi</option>
+                    <option value="hujumchi">Hujumchi</option>
+                </select>
+                <select class="formInput" id="club">
+                    <option selected disabled>Club tanlang</option>
+                    <option value="barcelona">Barcelona</option>
+                    <option value="bayern">Bayern</option>
+                    <option value="manchester-city">Manchester City</option>
+                    <option value="chelsea">Chelsea</option>
+                    <option disabled value="real-madrid">Real Madrid</option>
+                </select>
+                <Button type="submit">Ro'yxatga olish</Button>
+            </form>
+        </div>
+        <div class="reg-opener">
+            <img class="arrow"  src="./images/right-arrow-svgrepo-com.svg" alt="">
+        </div>
+    </div>
+    <div class="players__search">
+        <input id="searchName" type="text" placeholder="Ismi bo'yicha qidirish">
+        <select id="positionFilter">
+            <option disabled selected>O'yinchi pozitsiyasini boyicha qidirish</option>
+
+            <option value="darvozabon">Darvozabon</option>
+            <option value="himoyachi">Himoyachi</option>
+            <option value="yarim-himoyachi">Yarim himoyachi</option>
+            <option value="hujumchi">Hujumchi</option>
+        </select>
+        <select id="clubFilter">
+            <option selected disabled>Club bo'yicha qidirish</option>
+            <option value="barcelona">Barcelona</option>
+            <option value="bayern">Bayern</option>
+            <option value="manchester-city">Manchester City</option>
+            <option value="chelsea">Chelsea</option>
+            <option disabled value="real-madrid">Real Madrid</option>
+        </select>
+        <button class="reset">Reset</button>
+        <button class="transfer">Transfer</button>
+    </div>
+    <div class="players">
+    </div>
+    <div class="player-transfer-background Nonactive">
+        <div class="player-transfer">
+            <h2>Welcome to Transfer Market</h2>
+            <i class="bi bi-x-circle player-transfer-close"></i>
+            <select id="transferablePlayer">
+                <option disabled selected>O'yinchini tanlang</option>
+            </select>
+            <div class="transfer-menu">
+            </div>
+        </div>
+    </div>
+    <script src="./script/app.js"></script>
+</body>
+</html>
